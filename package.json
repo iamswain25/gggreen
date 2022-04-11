@@ -1,0 +1,15 @@
+{
+  "name": "gggreen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "maketypes": "^1.1.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "tsnode": "ts-node"
+  }
+}
