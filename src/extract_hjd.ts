@@ -11,6 +11,6 @@ const gg = rootData.features?.filter(
   (f) => f.properties.ELEC_SIDO === "경기도"
 );
 rootData.features = gg;
-fs.writeFileSync(__dirname + "/../public/gg.geojson", JSON.stringify(rootData), {
+fs.writeFileSync(__dirname + "/../data/gg_hjd.geojson", JSON.stringify(rootData), {
   encoding: "utf-8",
 });
