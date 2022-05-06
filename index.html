@@ -3,6 +3,9 @@
   <head>
     <script type="module" src="./src/draw.js" defer></script>
     <style>
+      body {
+        margin: 0;
+      }
       .gg:hover {
         fill: green;
       }
@@ -10,9 +13,26 @@
         fill: lightgreen;
         stroke: green;
       }
+      .landing {
+        /* flex: 1 0 auto;
+        background-image: url(./src/landing.jpeg); */
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center 42%;
+      }
+      .flex {
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <div></div>
+    <section class="flex">
+      <img class="landing" src="./src/landing.jpeg" />
+      <div id="map"></div>
+    </section>
   </body>
 </html>
