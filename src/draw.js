@@ -21,4 +21,19 @@ json("./data/gg_sg.geojson").then((data) => {
     .append("path")
     .attr("d", path)
     .attr("class", "gg");
+  svg
+    .selectAll("place-label")
+    .data(data.features)
+    .enter()
+    .append("text")
+    .attr("class", "place-label")
+    .attr("transform", function (d) {
+      console.log(d.geometry.coordinates);
+      return "translate(" + path.centroid(d) + ")";
+    })
+    .attr("dy", ".5em")
+    .attr("dx", "-2em")
+    .text(function (d) {
+      return d.properties.SIG_KOR_NM;
+    });
 });

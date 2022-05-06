@@ -6749,7 +6749,8 @@
       "properties": {
         "SIG_CD": "41480",
         "SIG_ENG_NM": "Paju-si",
-        "SIG_KOR_NM": "파주시"
+        "SIG_KOR_NM": "파주시",
+        "tags": ["파주공릉천하구", "생태위기", "대전차방호벽", "하천정비"]
       }
     },
     {
